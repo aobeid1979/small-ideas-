@@ -1,0 +1,1 @@
+fetch ('https://randomruser.me/api/results')
