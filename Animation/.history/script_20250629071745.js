@@ -123,7 +123,6 @@ function clock() {
   ctx.restore();
 
   ctx.restore();
-    requestAnimationFrame(clock);
 }
 
 requestAnimationFrame(clock);

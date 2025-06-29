@@ -98,33 +98,9 @@ function clock() {
   ctx.stroke();
   ctx.restore();
 
-  ctx.save();
-  ctx.rotate((Math.PI / 30) * (min + sec / 60));
-  ctx.strokeStyle = '#800000';
-  ctx.lineWidth = 6;
-  ctx.beginPath();
-  ctx.moveTo(-28, 0);
-  ctx.lineTo(112, 0);
-  ctx.stroke();
-  ctx.restore();
-
-   ctx.save();
-  ctx.rotate(Math.PI / 30 * sec);
-  ctx.strokeStyle = '#ff7f50';
-  ctx.lineWidth = 4;
-  ctx.fillStyle = '#ff7f50';
-  ctx.beginPath();
-  ctx.moveTo(-30, 0);
-  ctx.lineTo(100, 0);
-  ctx.stroke();
-  ctx.beginPath();
-    ctx.arc(0, 0, 10, 0, Math.PI * 2, true);
-    ctx.fill();
-  ctx.restore();
+  
 
   ctx.restore();
-    requestAnimationFrame(clock);
 }
 
-requestAnimationFrame(clock);
-
+clock();

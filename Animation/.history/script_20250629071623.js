@@ -110,9 +110,9 @@ function clock() {
 
    ctx.save();
   ctx.rotate(Math.PI / 30 * sec);
-  ctx.strokeStyle = '#ff7f50';
+  ctx.strokeStyle = '#ff7f';
   ctx.lineWidth = 4;
-  ctx.fillStyle = '#ff7f50';
+  ctx.fillStyle = '#800000';
   ctx.beginPath();
   ctx.moveTo(-30, 0);
   ctx.lineTo(100, 0);
@@ -123,8 +123,6 @@ function clock() {
   ctx.restore();
 
   ctx.restore();
-    requestAnimationFrame(clock);
 }
 
-requestAnimationFrame(clock);
-
+clock();
